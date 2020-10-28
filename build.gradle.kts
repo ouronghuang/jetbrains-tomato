@@ -37,8 +37,13 @@ version = pluginVersion
 
 // Configure project's dependencies
 repositories {
+    // mavenCentral()
+    // jcenter()
+
+    maven("https://maven.aliyun.com/nexus/content/groups/public/")
+    maven("https://maven.aliyun.com/nexus/content/repositories/jcenter")
+    mavenLocal()
     mavenCentral()
-    jcenter()
 }
 dependencies {
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.14.2")
